@@ -1,0 +1,14 @@
+.about-me-content {
+  margin-top: 5rem;
+}
+
+.about-me-content .icon {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-right: 1.5rem;
+}
+
+.tel:hover,
+.mailto:hover {
+  color: #0087e2 !important;
+}

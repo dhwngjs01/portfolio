@@ -1,0 +1,47 @@
+.navbar-scroll {
+  background-color: #fff !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-scroll .nav-item a.active {
+  color: #0087e2 !important;
+}
+
+.navbar-scroll .nav-item:hover a {
+  color: #0087e2 !important;
+}
+
+.navbar-scroll a {
+  color: #777 !important;
+}
+
+.nav-item:hover a {
+  color: #fff !important;
+}
+
+.navbar-nav a.active {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    color: #777 !important;
+  }
+
+  .navbar {
+    background-color: #fff;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #777 !important;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #0087e2 !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+}
