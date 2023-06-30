@@ -11,6 +11,7 @@ import MainVisual from "./components/MainVisual";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import Archiving from "./components/Archiving";
+import Projects from "./components/Projects";
 
 export default function App() {
   const swiper = useRef(null);
@@ -111,6 +112,9 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide className="archiving-slide">
           <Archiving />
+        </SwiperSlide>
+        <SwiperSlide className="projects-slide">
+          <Projects />
         </SwiperSlide>
       </Swiper>
     </>

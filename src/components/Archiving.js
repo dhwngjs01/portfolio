@@ -21,6 +21,7 @@ export default function Archiving() {
                   href="https://github.com/dhwngjs01"
                   title="https://github.com/dhwngjs01"
                   target="_blank"
+                  rel="noreferrer noopener"
                   className="text-decoration-none"
                 >
                   <Card className="p-4 rounded-4 shadow cursor-pointer">
