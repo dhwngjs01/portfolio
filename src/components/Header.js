@@ -10,10 +10,7 @@ export default function Header({ setCurrentSlide }) {
     <header className="header">
       <Navbar expand="lg" fixed="top" id="nav">
         <Container className="justify-content-between">
-          <Nav.Link
-            className="fw-bold fs-3 text-white-70"
-            onClick={() => setCurrentSlide(0)}
-          >
+          <Nav.Link className="fw-bold fs-3 text-white-70" onClick={() => setCurrentSlide(0)}>
             포트폴리오
           </Nav.Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -22,10 +19,7 @@ export default function Header({ setCurrentSlide }) {
               {menu_list.map((menu, index) => {
                 return (
                   <Nav.Item key={index} className="px-lg-3">
-                    <Nav.Link
-                      className="fw-bold fs-5 text-white-70"
-                      onClick={() => setCurrentSlide(index + 1)}
-                    >
+                    <Nav.Link className="fw-bold fs-5 text-white-70" onClick={() => setCurrentSlide(index + 1)}>
                       {menu}
                     </Nav.Link>
                   </Nav.Item>

@@ -139,12 +139,7 @@ export default function Skills() {
                     <Row className="gy-4">
                       {skills.frontEnd.map((skill, index) => (
                         <Col key={index} lg={skill.size.lg}>
-                          <img
-                            src={skill.icon}
-                            alt={skill.name + " 아이콘"}
-                            title={skill.name}
-                            className="img-fluid"
-                          />
+                          <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
                         </Col>
                       ))}
                     </Row>
@@ -162,12 +157,7 @@ export default function Skills() {
                         <Row className="gy-4 justify-content-center align-items-center">
                           {skills.backEnd.map((skill, index) => (
                             <Col key={index} lg={skill.size.lg}>
-                              <img
-                                src={skill.icon}
-                                alt={skill.name + " 아이콘"}
-                                title={skill.name}
-                                className="img-fluid"
-                              />
+                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
                             </Col>
                           ))}
                         </Row>
@@ -183,12 +173,7 @@ export default function Skills() {
                         <Row className="gy-4 justify-content-center align-items-center">
                           {skills.database.map((skill, index) => (
                             <Col key={index} lg={skill.size.lg}>
-                              <img
-                                src={skill.icon}
-                                alt={skill.name + " 아이콘"}
-                                title={skill.name}
-                                className="img-fluid"
-                              />
+                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
                             </Col>
                           ))}
                         </Row>
@@ -202,20 +187,13 @@ export default function Skills() {
                   <Col lg={12}>
                     <Card className="p-4 rounded-4 shadow">
                       <Card.Title className="border-bottom">
-                        <h3 className="text-primary fw-bold">
-                          Version Control
-                        </h3>
+                        <h3 className="text-primary fw-bold">Version Control</h3>
                       </Card.Title>
                       <Card.Body>
                         <Row className="gy-3 justify-content-center align-items-center">
                           {skills.versionControl.map((skill, index) => (
                             <Col key={index} lg={skill.size.lg}>
-                              <img
-                                src={skill.icon}
-                                alt={skill.name + " 아이콘"}
-                                title={skill.name}
-                                className="img-fluid"
-                              />
+                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
                             </Col>
                           ))}
                         </Row>
@@ -231,12 +209,7 @@ export default function Skills() {
                         <Row className="gy-3 justify-content-center align-items-center">
                           {skills.etc.map((skill, index) => (
                             <Col key={index} lg={skill.size.lg}>
-                              <img
-                                src={skill.icon}
-                                alt={skill.name + " 아이콘"}
-                                title={skill.name}
-                                className="img-fluid"
-                              />
+                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
                             </Col>
                           ))}
                         </Row>

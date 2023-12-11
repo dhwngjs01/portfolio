@@ -1,15 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendar,
-  faEnvelope,
-  faLink,
-  faLocationDot,
-  faPencil,
-  faPhone,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faEnvelope, faLink, faLocationDot, faPencil, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/AboutMe.css";
 
@@ -70,10 +62,7 @@ export default function AboutMe() {
                         <h3 className="fs-5 fw-bold">{item.category}</h3>
                         <p style={{ wordBreak: "keep-all" }}>
                           {item.type ? (
-                            <a
-                              href={`${item.type}:${item.content}`}
-                              className={`text-decoration-none text-black ${item.type}`}
-                            >
+                            <a href={`${item.type}:${item.content}`} className={`text-decoration-none text-black ${item.type}`}>
                               {item.content}
                             </a>
                           ) : (

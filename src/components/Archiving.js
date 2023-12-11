@@ -17,21 +17,10 @@ export default function Archiving() {
           <div className="archiving-content pt-5">
             <Row className="justify-content-center align-items-center">
               <Col lg={6}>
-                <a
-                  href="https://github.com/dhwngjs01"
-                  title="https://github.com/dhwngjs01"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="text-decoration-none"
-                >
+                <a href="https://github.com/dhwngjs01" title="https://github.com/dhwngjs01" target="_blank" rel="noreferrer noopener" className="text-decoration-none">
                   <Card className="p-4 rounded-4 shadow cursor-pointer">
                     <Card.Title className="mb-4">
-                      <img
-                        src="/images/icons/version-control/github.png"
-                        alt="Github 아이콘"
-                        title="Github"
-                        className="img-fluid px-5"
-                      />
+                      <img src="/images/icons/version-control/github.png" alt="Github 아이콘" title="Github" className="img-fluid px-5" />
                     </Card.Title>
                     <Card.Body>
                       <p className="link-primary">github.com/dhwngjs01</p>
