@@ -63,7 +63,7 @@ export default function AboutMe() {
                       <h5 className="fw-bold">{item.category}</h5>
                       <span className="word-break-keep-all">
                         {item.type ? (
-                          <a href={`${item.type}:${item.content}`} className={"text-decoration-none text-black"}>
+                          <a href={`${item.type}:${item.content}`} className={`text-decoration-none text-black ${item.type}`}>
                             {item.content}
                           </a>
                         ) : (
