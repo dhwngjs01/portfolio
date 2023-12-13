@@ -50,7 +50,7 @@ export default function AboutMe() {
             <span>ABOUT ME</span>
           </h2>
         </div>
-        <div className="about-me-content section-content">
+        <div className="about-me-content">
           <Row className="row-gap-5">
             {about_me.map((item, index) => {
               return (
