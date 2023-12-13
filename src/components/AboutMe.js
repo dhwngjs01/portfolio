@@ -44,12 +44,10 @@ export default function AboutMe() {
   return (
     <section id="about-me">
       <Container>
-        <div className="about-me-title section-title">
-          <h2 className="text-center">
-            <FontAwesomeIcon icon={faLink} className="icon" />
-            <span>ABOUT ME</span>
-          </h2>
-        </div>
+        <h2 className="about-me-title section-title text-center column-gap-3">
+          <FontAwesomeIcon icon={faLink} className="icon" />
+          <span>ABOUT ME</span>
+        </h2>
         <div className="about-me-content">
           <Row className="row-gap-5">
             {about_me.map((item, index) => {

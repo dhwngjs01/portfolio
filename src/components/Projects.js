@@ -8,12 +8,10 @@ export default function Projects() {
     <section id="projects">
       <div className="projects py-5">
         <Container>
-          <div className="projects-title">
-            <h2 className="text-center text-white">
-              <FontAwesomeIcon icon={faLink} className="icon" />
-              <span>PROJECTS</span>
-            </h2>
-          </div>
+          <h2 className="projects-title section-title text-center text-white">
+            <FontAwesomeIcon icon={faLink} className="icon" />
+            <span>PROJECTS</span>
+          </h2>
           <div className="projects-content">
             <Row className="gy-4">
               <Col lg={12}>

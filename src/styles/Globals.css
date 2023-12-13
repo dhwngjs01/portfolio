@@ -13,24 +13,20 @@ section {
 }
 
 .section-title {
-  margin-bottom: 5rem;
-}
-
-.section-title h2 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 3rem;
   font-weight: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
-.section-title h2 .icon {
+.section-title .icon {
   font-size: 2rem;
-  margin-right: 1rem;
 }
 
-.section-title h2 span {
+.section-title span {
   border-bottom: 0.2rem solid #eee;
   padding-bottom: 0.25rem;
 }
