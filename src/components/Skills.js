@@ -120,108 +120,106 @@ export default function Skills() {
 
   return (
     <section id="skills">
-      <div className="skills">
-        <Container>
-          <div className="skills-title">
-            <h2 className="text-center text-white">
-              <FontAwesomeIcon icon={faLink} className="icon" />
-              <span>SKILLS</span>
-            </h2>
-          </div>
-          <div className="skills-content">
-            <Row>
-              <Col lg={4}>
-                <Card className="p-4 rounded-4 shadow">
-                  <Card.Title className="border-bottom">
-                    <h3 className="text-primary fw-bold">Front-End</h3>
-                  </Card.Title>
-                  <Card.Body>
-                    <Row className="gy-4">
-                      {skills.frontEnd.map((skill, index) => (
-                        <Col key={index} lg={skill.size.lg}>
-                          <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
-                        </Col>
-                      ))}
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col lg={4}>
-                <Row className="gap-3">
-                  <Col lg={12}>
-                    <Card className="p-4 rounded-4 shadow">
-                      <Card.Title className="border-bottom">
-                        <h3 className="text-primary fw-bold">Back-End</h3>
-                      </Card.Title>
-                      <Card.Body>
-                        <Row className="gy-4 justify-content-center align-items-center">
-                          {skills.backEnd.map((skill, index) => (
-                            <Col key={index} lg={skill.size.lg}>
-                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
-                            </Col>
-                          ))}
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col lg={12}>
-                    <Card className="p-4 rounded-4 shadow">
-                      <Card.Title className="border-bottom">
-                        <h3 className="text-primary fw-bold">Database</h3>
-                      </Card.Title>
-                      <Card.Body>
-                        <Row className="gy-4 justify-content-center align-items-center">
-                          {skills.database.map((skill, index) => (
-                            <Col key={index} lg={skill.size.lg}>
-                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
-                            </Col>
-                          ))}
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-              </Col>
-              <Col lg={4}>
-                <Row className="gap-3">
-                  <Col lg={12}>
-                    <Card className="p-4 rounded-4 shadow">
-                      <Card.Title className="border-bottom">
-                        <h3 className="text-primary fw-bold">Version Control</h3>
-                      </Card.Title>
-                      <Card.Body>
-                        <Row className="gy-3 justify-content-center align-items-center">
-                          {skills.versionControl.map((skill, index) => (
-                            <Col key={index} lg={skill.size.lg}>
-                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
-                            </Col>
-                          ))}
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                  <Col lg={12}>
-                    <Card className="p-4 rounded-4 shadow">
-                      <Card.Title className="border-bottom">
-                        <h3 className="text-primary fw-bold">ETC</h3>
-                      </Card.Title>
-                      <Card.Body>
-                        <Row className="gy-3 justify-content-center align-items-center">
-                          {skills.etc.map((skill, index) => (
-                            <Col key={index} lg={skill.size.lg}>
-                              <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
-                            </Col>
-                          ))}
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </div>
-        </Container>
-      </div>
+      <Container>
+        <div className="skills-title section-title">
+          <h2 className="text-center text-white">
+            <FontAwesomeIcon icon={faLink} className="icon" />
+            <span>SKILLS</span>
+          </h2>
+        </div>
+        <div className="skills-content">
+          <Row>
+            <Col lg={4}>
+              <Card className="p-4 rounded-4 shadow">
+                <Card.Title className="border-bottom">
+                  <h3 className="text-primary fw-bold">Front-End</h3>
+                </Card.Title>
+                <Card.Body>
+                  <Row className="gy-4">
+                    {skills.frontEnd.map((skill, index) => (
+                      <Col key={index} lg={skill.size.lg}>
+                        <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
+                      </Col>
+                    ))}
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col lg={4}>
+              <Row className="gap-3">
+                <Col lg={12}>
+                  <Card className="p-4 rounded-4 shadow">
+                    <Card.Title className="border-bottom">
+                      <h3 className="text-primary fw-bold">Back-End</h3>
+                    </Card.Title>
+                    <Card.Body>
+                      <Row className="gy-4 justify-content-center align-items-center">
+                        {skills.backEnd.map((skill, index) => (
+                          <Col key={index} lg={skill.size.lg}>
+                            <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
+                          </Col>
+                        ))}
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={12}>
+                  <Card className="p-4 rounded-4 shadow">
+                    <Card.Title className="border-bottom">
+                      <h3 className="text-primary fw-bold">Database</h3>
+                    </Card.Title>
+                    <Card.Body>
+                      <Row className="gy-4 justify-content-center align-items-center">
+                        {skills.database.map((skill, index) => (
+                          <Col key={index} lg={skill.size.lg}>
+                            <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
+                          </Col>
+                        ))}
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={4}>
+              <Row className="gap-3">
+                <Col lg={12}>
+                  <Card className="p-4 rounded-4 shadow">
+                    <Card.Title className="border-bottom">
+                      <h3 className="text-primary fw-bold">Version Control</h3>
+                    </Card.Title>
+                    <Card.Body>
+                      <Row className="gy-3 justify-content-center align-items-center">
+                        {skills.versionControl.map((skill, index) => (
+                          <Col key={index} lg={skill.size.lg}>
+                            <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
+                          </Col>
+                        ))}
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col lg={12}>
+                  <Card className="p-4 rounded-4 shadow">
+                    <Card.Title className="border-bottom">
+                      <h3 className="text-primary fw-bold">ETC</h3>
+                    </Card.Title>
+                    <Card.Body>
+                      <Row className="gy-3 justify-content-center align-items-center">
+                        {skills.etc.map((skill, index) => (
+                          <Col key={index} lg={skill.size.lg}>
+                            <img src={skill.icon} alt={skill.name + " 아이콘"} title={skill.name} className="img-fluid" />
+                          </Col>
+                        ))}
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </div>
+      </Container>
     </section>
   );
 }

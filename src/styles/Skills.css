@@ -1,12 +1,4 @@
-.skills-slide {
-  background-color: #5a8100;
-}
-
 #skills {
-  padding-top: 30%;
-}
-
-.skills-content {
-  margin-top: 3rem;
-  margin-bottom: 8rem;
+  background-color: #5a8100;
+  height: inherit;
 }

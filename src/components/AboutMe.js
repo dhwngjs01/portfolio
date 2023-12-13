@@ -43,41 +43,41 @@ export default function AboutMe() {
 
   return (
     <section id="about-me">
-      <div className="about-me py-5">
-        <Container>
-          <div className="about-me-title">
-            <h2 className="text-center">
-              <FontAwesomeIcon icon={faLink} className="icon" />
-              <span>ABOUT ME</span>
-            </h2>
-          </div>
-          <div className="about-me-content">
-            <Row className="gy-4">
-              {about_me.map((item, index) => {
-                return (
-                  <Col key={index} lg={4}>
-                    <div className="d-flex">
-                      <FontAwesomeIcon icon={item.icon} className="icon" />
-                      <div className="aboud-me-text">
-                        <h3 className="fs-5 fw-bold">{item.category}</h3>
-                        <p style={{ wordBreak: "keep-all" }}>
-                          {item.type ? (
-                            <a href={`${item.type}:${item.content}`} className={`text-decoration-none text-black ${item.type}`}>
-                              {item.content}
-                            </a>
-                          ) : (
-                            item.content
-                          )}
-                        </p>
-                      </div>
+      <Container>
+        <div className="about-me-title section-title">
+          <h2 className="text-center">
+            <FontAwesomeIcon icon={faLink} className="icon" />
+            <span>ABOUT ME</span>
+          </h2>
+        </div>
+        <div className="about-me-content section-content">
+          <Row className="row-gap-5">
+            {about_me.map((item, index) => {
+              return (
+                <Col key={index} lg={4}>
+                  <div className="d-flex">
+                    <div className="about-me-icon">
+                      <FontAwesomeIcon icon={item.icon} />
                     </div>
-                  </Col>
-                );
-              })}
-            </Row>
-          </div>
-        </Container>
-      </div>
+                    <div className="aboud-me-text">
+                      <h5 className="fw-bold">{item.category}</h5>
+                      <span className="word-break-keep-all">
+                        {item.type ? (
+                          <a href={`${item.type}:${item.content}`} className={"text-decoration-none text-black"}>
+                            {item.content}
+                          </a>
+                        ) : (
+                          item.content
+                        )}
+                      </span>
+                    </div>
+                  </div>
+                </Col>
+              );
+            })}
+          </Row>
+        </div>
+      </Container>
     </section>
   );
 }
