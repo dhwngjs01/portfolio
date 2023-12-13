@@ -44,7 +44,7 @@ export default function AboutMe() {
   return (
     <section id="about-me">
       <Container>
-        <h2 className="about-me-title section-title text-center column-gap-3">
+        <h2 className="about-me-title section-title">
           <FontAwesomeIcon icon={faLink} className="icon" />
           <span>ABOUT ME</span>
         </h2>

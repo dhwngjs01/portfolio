@@ -121,7 +121,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <Container>
-        <h2 className="skills-title section-title text-center text-white column-gap-3">
+        <h2 className="skills-title section-title text-white">
           <FontAwesomeIcon icon={faLink} className="icon" />
           <span>SKILLS</span>
         </h2>

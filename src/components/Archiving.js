@@ -7,7 +7,7 @@ export default function Archiving() {
   return (
     <section id="archiving">
       <Container>
-        <h2 className="archiving-title section-title text-center text-white column-gap-3">
+        <h2 className="archiving-title section-title text-white">
           <FontAwesomeIcon icon={faLink} className="icon" />
           <span>ARCHIVING</span>
         </h2>
