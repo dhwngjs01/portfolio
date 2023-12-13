@@ -14,12 +14,12 @@ section {
 
 .section-title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 3rem;
-  font-weight: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 3rem;
+  font-weight: 1000;
   margin-bottom: 5rem;
   column-gap: 1rem;
 }
@@ -35,6 +35,10 @@ section {
 
 .fa-link {
   cursor: pointer;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 .word-break-keep-all {

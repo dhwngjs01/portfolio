@@ -12,12 +12,13 @@ export default function Projects() {
           <span>PROJECTS</span>
         </h2>
         <div className="projects-content">
-          <Row className="gy-4">
+          <Row className="row-gap-4">
             <Col lg={12}>
               {ProjectCard({
                 title: "Electrip",
                 date: "2023. 03",
                 collaboration: "개인 프로젝트",
+                url: "https://github.com/dhwngjs01/Electrip",
               })}
             </Col>
             <Col lg={12}>
@@ -25,6 +26,7 @@ export default function Projects() {
                 title: "Oh! Bike 쇼핑몰",
                 date: "2019. 11",
                 collaboration: "개인 프로젝트",
+                url: "https://github.com/dhwngjs01/OhBike_ShoppingMall",
               })}
             </Col>
             <Col lg={12}>
@@ -32,6 +34,7 @@ export default function Projects() {
                 title: "바이크 중고거래 게시판",
                 date: "2019. 09",
                 collaboration: "개인 프로젝트",
+                url: "https://github.com/dhwngjs01/Spring_Motorcycle_BBS",
               })}
             </Col>
           </Row>
@@ -41,11 +44,17 @@ export default function Projects() {
   );
 }
 
-export function ProjectCard({ title, date, collaboration, image }) {
+function ProjectCard(param) {
+  const { title, date, collaboration, url } = param;
+
+  const handleClick = (url) => {
+    window.open(url, "_blank", "noopener, noreferrer");
+  };
+
   return (
-    <Card className="p-4 rounded-4 shadow">
+    <Card className="p-4 rounded-4 shadow cursor-pointer" onClick={() => handleClick(url)}>
       <Card.Title className="text-center">
-        <h2 className="fs-2">{title}</h2>
+        <h2 className="fs-2 fw-bold">{title}</h2>
         <p className="fs-6">
           {date} ({collaboration})
         </p>
