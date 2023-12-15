@@ -3,12 +3,12 @@ import "../styles/Projects.css";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-export default function Projects() {
+export default function Projects({ handleClickLinkIcon }) {
   return (
     <section id="projects">
       <Container>
         <h2 className="projects-title section-title text-white">
-          <FontAwesomeIcon icon={faLink} className="icon" />
+          <FontAwesomeIcon icon={faLink} className="icon" onClick={() => handleClickLinkIcon("projects")} />
           <span>PROJECTS</span>
         </h2>
         <div className="projects-content">

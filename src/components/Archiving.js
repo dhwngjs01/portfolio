@@ -3,12 +3,12 @@ import "../styles/Archiving.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-export default function Archiving() {
+export default function Archiving({ handleClickLinkIcon }) {
   return (
     <section id="archiving">
       <Container>
         <h2 className="archiving-title section-title text-white">
-          <FontAwesomeIcon icon={faLink} className="icon" />
+          <FontAwesomeIcon icon={faLink} className="icon" onClick={() => handleClickLinkIcon("archiving")} />
           <span>ARCHIVING</span>
         </h2>
         <div className="archiving-content">

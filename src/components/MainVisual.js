@@ -5,7 +5,7 @@ import "../styles/MainVisual.css";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function MainVisual() {
+export default function MainVisual({ handleClickLinkIcon }) {
   return (
     <div className="w-100 vh-100 d-flex align-items-center justify-content-center">
       <div className="main-visual-background" style={{ backgroundImage: "url(/images/main/main-visual.jpg)" }}></div>
@@ -26,7 +26,7 @@ export default function MainVisual() {
           </p>
         </div>
         <div className="main-visual-button">
-          <Button size="lg" variant="primary" className="rounded-5 fs-5 px-5 py-3">
+          <Button size="lg" variant="primary" className="rounded-5 fs-5 px-5 py-3" onClick={() => handleClickLinkIcon("about-me")}>
             <span className="me-1">더 알아보기</span>
             <FontAwesomeIcon icon={faAnglesDown} className="ms-1" />
           </Button>

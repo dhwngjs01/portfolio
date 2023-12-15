@@ -4,7 +4,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-export default function Skills() {
+export default function Skills({ handleClickLinkIcon }) {
   const skills = {
     frontEnd: [
       {
@@ -124,7 +124,7 @@ export default function Skills() {
     <section id="skills">
       <Container>
         <h2 className="skills-title section-title text-white">
-          <FontAwesomeIcon icon={faLink} className="icon" />
+          <FontAwesomeIcon icon={faLink} className="icon" onClick={() => handleClickLinkIcon("skills")} />
           <span>SKILLS</span>
         </h2>
         <div className="skills-content">

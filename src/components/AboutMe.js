@@ -5,7 +5,7 @@ import { faCalendar, faEnvelope, faLink, faLocationDot, faPencil, faPhone, faUse
 
 import "../styles/AboutMe.css";
 
-export default function AboutMe() {
+export default function AboutMe({ handleClickLinkIcon }) {
   const about_me = [
     {
       icon: faUser,
@@ -45,7 +45,7 @@ export default function AboutMe() {
     <section id="about-me">
       <Container>
         <h2 className="about-me-title section-title">
-          <FontAwesomeIcon icon={faLink} className="icon" />
+          <FontAwesomeIcon icon={faLink} className="icon" onClick={() => handleClickLinkIcon("about-me")} />
           <span>ABOUT ME</span>
         </h2>
         <div className="about-me-content">
