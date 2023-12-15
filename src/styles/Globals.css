@@ -53,6 +53,18 @@ section {
   font-size: 3rem !important;
 }
 
+.mw-75 {
+  max-width: 75% !important;
+}
+
+.mw-50 {
+  max-width: 50% !important;
+}
+
+.mw-25 {
+  max-width: 25% !important;
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {
