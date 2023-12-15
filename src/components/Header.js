@@ -52,7 +52,7 @@ export default function Header() {
           <Nav.Link
             className="fw-bold fs-3 text-white-70"
             onClick={() => {
-              handleClick("root");
+              handleClick("wrap");
             }}
           >
             포트폴리오
