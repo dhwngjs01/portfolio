@@ -1,15 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-import "../styles/MainVisual.css";
+import "../styles/MainVisual.scss";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function MainVisual({ handleClickLinkIcon }) {
   return (
-    <div className="w-100 vh-100 d-flex align-items-center justify-content-center">
+    <div id="main-visual" className="w-100 vh-100 d-flex align-items-center justify-content-center">
       <div className="main-visual-background" style={{ backgroundImage: "url(/images/main/main-visual.jpg)" }}></div>
-      <div className="main-visual-content text-white text-center">
+      <div className="main-visual-content">
         <div className="main-visual-title">
           <h1 className="fw-bold fs-0">오주헌</h1>
           <h2 className="fs-2">WEB DEVELOPER</h2>

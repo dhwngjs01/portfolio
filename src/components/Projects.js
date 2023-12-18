@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/Projects.css";
+import "../styles/Projects.scss";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { Card, Col, Container, Row } from "react-bootstrap";
 

@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles/Globals.css";
+import "./styles/Globals.scss";
 
 import Header from "./components/Header";
 import MainVisual from "./components/MainVisual";

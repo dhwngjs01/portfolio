@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faEnvelope, faLink, faLocationDot, faPencil, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 
-import "../styles/AboutMe.css";
+import "../styles/AboutMe.scss";
 
 export default function AboutMe({ handleClickLinkIcon }) {
   const about_me = [
@@ -57,7 +57,7 @@ export default function AboutMe({ handleClickLinkIcon }) {
                     <div className="about-me-icon">
                       <FontAwesomeIcon icon={item.icon} />
                     </div>
-                    <div className="aboud-me-text">
+                    <div className="about-me-text">
                       <h5 className="fw-bold">{item.category}</h5>
                       <span className="word-break-keep-all">
                         {item.type ? (

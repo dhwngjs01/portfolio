@@ -1,4 +1,4 @@
-import "../styles/Skills.css";
+import "../styles/Skills.scss";
 
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

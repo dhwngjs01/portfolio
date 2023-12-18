@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-import "../styles/Header.css";
+import "../styles/Header.scss";
 
 export default function Header() {
   const menu_list = [
@@ -17,23 +17,25 @@ export default function Header() {
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
-        nav.classList.add("navbar-scroll");
+        nav.classList.replace("navbar-not-scroll", "navbar-scroll");
       } else {
-        nav.classList.remove("navbar-scroll");
+        nav.classList.replace("navbar-scroll", "navbar-not-scroll");
       }
 
       // 스크롤 위치에 따른 메뉴 활성화
       const scrollPosition = window.scrollY;
       const sectionList = document.querySelectorAll("section");
       sectionList.forEach((section) => {
-        if (scrollPosition >= section.offsetTop - 100 && scrollPosition < section.offsetTop + section.offsetHeight - 100) {
-          const id = section.getAttribute("id");
+        const id = section.getAttribute("id");
 
+        if (scrollPosition >= section.offsetTop - 100 && scrollPosition < section.offsetTop + section.offsetHeight - 100) {
           document.querySelectorAll(".navbar-nav a").forEach((a) => {
             a.classList.remove("active");
           });
 
           document.querySelector(`a[data-id="${id}"]`).classList.add("active");
+        } else {
+          document.querySelector(`a[data-id="${id}"]`).classList.remove("active");
         }
       });
     });
@@ -47,10 +49,10 @@ export default function Header() {
 
   return (
     <header className="header">
-      <Navbar expand="lg" fixed="top" id="nav">
+      <Navbar id="nav" expand="lg" fixed="top" className="navbar-not-scroll">
         <Container className="justify-content-between">
           <Nav.Link
-            className="fw-bold fs-3 text-white-70"
+            className="fw-bold fs-3 text-white-70 navbar-brand"
             onClick={() => {
               handleClick("wrap");
             }}
