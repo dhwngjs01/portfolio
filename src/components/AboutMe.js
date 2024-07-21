@@ -37,7 +37,7 @@ export default function AboutMe({ handleClickLinkIcon }) {
     {
       icon: faPencil,
       category: "학력",
-      content: "인하공업전문대학 (컴퓨터정보공학부)",
+      content: "인하공업전문대학 (컴퓨터정보공학과)",
     },
   ];
 
