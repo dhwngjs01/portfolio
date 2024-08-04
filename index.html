@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 개발자 오주헌의 포트폴리오</title>
+    <link rel="stylesheet" href="resources/lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="resources/lib/wow/animate.css" />
+    <link rel="stylesheet" href="resources/lib/swiper/swiper.css" />
+    <link rel="stylesheet" href="resources/css/global.css" />
+    <link rel="stylesheet" href="resources/css/main.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- 헤더 -->
+      <header class="header">
+        <!-- 네비게이션 -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+          <div class="container justify-content-between">
+            <a
+              href="javascript:void(0)"
+              class="navbar-brand fw-bold fs-3 text-white-70"
+              onclick="handleSlideMove(0)"
+              >포트폴리오</a
+            >
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarCollapse"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item px-lg-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="nav-link fw-bold fs-5 text-white-70"
+                    onclick="handleSlideMove(1)"
+                    >About Me</a
+                  >
+                </li>
+                <li class="nav-item px-lg-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="nav-link fw-bold fs-5 text-white-70"
+                    onclick="handleSlideMove(2)"
+                    >Skills</a
+                  >
+                </li>
+                <li class="nav-item px-lg-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="nav-link fw-bold fs-5 text-white-70"
+                    onclick="handleSlideMove(3)"
+                    >Archiving</a
+                  >
+                </li>
+                <li class="nav-item px-lg-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="nav-link fw-bold fs-5 text-white-70"
+                    onclick="handleSlideMove(4)"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item px-lg-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="nav-link fw-bold fs-5 text-white-70"
+                    onclick="handleSlideMove(5)"
+                    >Career</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- /헤더 -->
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 메인비주얼 -->
+          <div class="swiper-slide main-visual-slide">
+            <div class="main-visual">
+              <div class="main-visual-content">
+                <div class="main-visual-title">
+                  <h1>오주헌</h1>
+                  <h2>WEB DEVELOPER</h2>
+                </div>
+                <div class="main-visual-border"></div>
+                <div class="main-visual-description">
+                  <p>
+                    끊임없이 발전하는 웹 기술과 함께 성장하는 개발자
+                    오주헌입니다.
+                    <br />
+                    <br />
+                    최신 웹 개발 기술을 학습하고, 적용하여 웹 서비스를
+                    <br />
+                    보다 효율적이고 직관적으로 구현하는 것을 연구하고 있습니다.
+                  </p>
+                </div>
+                <div class="main-visual-button">
+                  <button
+                    class="btn btn-lg btn-primary rounded-5 fs-5 px-5 py-3"
+                    onclick="handleSlideMove(1)"
+                  >
+                    <span class="me-1">더 알아보기</span>
+                    <i class="fa-solid fa-angles-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /메인비주얼 -->
+
+          <!-- About Me -->
+          <div class="swiper-slide">
+            <section id="about-me">
+              <div class="about-me py-5">
+                <div class="container">
+                  <div class="about-me-title">
+                    <h2 class="text-center">
+                      <i
+                        class="fa-solid fa-link"
+                        onclick="handleSlideMove(1)"
+                      ></i>
+                      <span>ABOUT ME</span>
+                    </h2>
+                  </div>
+                  <div class="about-me-content">
+                    <div class="row gy-4">
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-user"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">이름</h3>
+                            <p>오주헌</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-calendar"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">생년월일</h3>
+                            <p>99. 02. 03</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">주소지</h3>
+                            <p>인천광역시 미추홀구</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-phone"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">연락처</h3>
+                            <p>
+                              <a
+                                href="tel:010-6263-6013"
+                                class="text-decoration-none text-black tel-link"
+                                >010-6263-6013</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-envelope"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">이메일</h3>
+                            <p>
+                              <a
+                                href="mailto:dhwngjs01@naver.com"
+                                class="text-decoration-none text-black mail-link"
+                                >dhwngjs01@naver.com</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="d-flex">
+                          <i class="fa-solid fa-pencil"></i>
+                          <div class="aboud-me-text">
+                            <h3 class="fs-5 fw-bold">학력</h3>
+                            <p>
+                              인하공업전문대학
+                              <br />
+                              (컴퓨터정보공학부)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /About Me -->
+          <!-- Skills -->
+          <div class="swiper-slide skills-slide">
+            <section id="skills">
+              <div class="skills">
+                <div class="container">
+                  <div class="skills-title">
+                    <h2 class="text-center text-white">
+                      <i
+                        class="fa-solid fa-link"
+                        onclick="handleSlideMove(2)"
+                      ></i>
+                      <span>SKILLS</span>
+                    </h2>
+                  </div>
+                  <div class="skills-content">
+                    <div class="row">
+                      <!-- Frontend -->
+                      <div class="col-lg-4">
+                        <div class="card p-4 rounded-4 shadow">
+                          <div class="card-title border-bottom">
+                            <h3 class="text-primary fw-bold">Frontend</h3>
+                          </div>
+                          <div class="card-body">
+                            <div class="row gy-4">
+                              <div class="col-lg-4">
+                                <img
+                                  src="resources/images/icons/front-end/html5.png"
+                                  alt="HTML 아이콘"
+                                  title="HTML5"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-4">
+                                <img
+                                  src="resources/images/icons/front-end/css3.png"
+                                  alt="CSS 아이콘"
+                                  title="CSS3"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-4">
+                                <img
+                                  src="resources/images/icons/front-end/javascript.png"
+                                  alt="자바스크립트 아이콘"
+                                  title="JavaScript"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-12">
+                                <img
+                                  src="resources/images/icons/front-end/bootstrap.png"
+                                  alt="부트스트랩 아이콘"
+                                  title="Bootstrap"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-12">
+                                <img
+                                  src="resources/images/icons/front-end/jquery.png"
+                                  alt="제이쿼리 아이콘"
+                                  title="jQuery"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-12">
+                                <img
+                                  src="resources/images/icons/front-end/pug.png"
+                                  alt="퍼그 아이콘"
+                                  title="Pug"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-12">
+                                <img
+                                  src="resources/images/icons/front-end/react.png"
+                                  alt="리액트 아이콘"
+                                  title="React.js"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="col-lg-12">
+                                <img
+                                  src="resources/images/icons/front-end/nextjs.png"
+                                  alt="넥스트JS 아이콘"
+                                  title="Next.js"
+                                  class="img-fluid px-3"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /Frontend -->
+                      <!-- Backend, Database -->
+                      <div class="col-lg-4">
+                        <div class="row gap-3">
+                          <!-- Backend -->
+                          <div class="col-lg-12">
+                            <div class="card p-4 rounded-4 shadow">
+                              <div class="card-title border-bottom">
+                                <h3 class="text-primary fw-bold">Backend</h3>
+                              </div>
+                              <div class="card-body">
+                                <div
+                                  class="row justify-content-center align-items-center gy-4"
+                                >
+                                  <div class="col-lg-6">
+                                    <img
+                                      src="resources/images/icons/back-end/php.png"
+                                      alt="PHP 아이콘"
+                                      title="PHP"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <img
+                                      src="resources/images/icons/back-end/jsp.png"
+                                      alt="JSP 아이콘"
+                                      title="JSP"
+                                      class="img-fluid px-4"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/back-end/nodejs.png"
+                                      alt="Node.js 아이콘"
+                                      title="Node.js"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/back-end/expressjs.png"
+                                      alt="Express.js 아이콘"
+                                      title="Express.js"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/back-end/spring.png"
+                                      alt="Spring 아이콘"
+                                      title="Spring"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /Backend -->
+                          <div class="col-lg-12">
+                            <!-- Database -->
+                            <div class="card p-4 rounded-4 shadow">
+                              <div class="card-title border-bottom">
+                                <h3 class="text-primary fw-bold">Database</h3>
+                              </div>
+                              <div class="card-body">
+                                <div
+                                  class="row justify-content-center align-items-center gy-4"
+                                >
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/database/mysql.png"
+                                      alt="MySQL 아이콘"
+                                      title="MySQL"
+                                      class="img-fluid px-3"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/database/mariadb.png"
+                                      alt="MariaDB 아이콘"
+                                      title="MariaDB"
+                                      class="img-fluid px-3"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /Database -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="row gap-3">
+                          <div class="col-lg-12">
+                            <div class="card p-4 rounded-4 shadow">
+                              <div class="card-title border-bottom">
+                                <h3 class="text-primary fw-bold">
+                                  Version Control
+                                </h3>
+                              </div>
+                              <div class="card-body">
+                                <div
+                                  class="row justify-content-center align-items-center gy-3"
+                                >
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/version-control/git.png"
+                                      alt="깃 아이콘"
+                                      title="Git"
+                                      class="img-fluid px-5"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/version-control/github.png"
+                                      alt="깃 아이콘"
+                                      title="Git"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="card p-4 rounded-4 shadow">
+                              <div class="card-title border-bottom">
+                                <h3 class="text-primary fw-bold">ETC</h3>
+                              </div>
+                              <div class="card-body">
+                                <div
+                                  class="row justify-content-center align-items-center gy-3"
+                                >
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/etc/apache.png"
+                                      alt="아파치 아이콘"
+                                      title="Apache"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/etc/aws.png"
+                                      alt="아마존 웹 서비스 아이콘"
+                                      title="Amazon Web Services"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                  <div class="col-lg-12">
+                                    <img
+                                      src="resources/images/icons/etc/vscode.png"
+                                      alt="Visual Studio Code 아이콘"
+                                      title="Visual Studio Code"
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /Skills -->
+          <!-- Archiving -->
+          <div class="swiper-slide archiving-slide">
+            <section id="archiving">
+              <div class="archiving py-5">
+                <div class="container">
+                  <div class="archiving-title">
+                    <h2 class="text-center text-white">
+                      <i
+                        class="fa-solid fa-link"
+                        onclick="handleSlideMove(3)"
+                      ></i>
+                      <span>ARCHIVING</span>
+                    </h2>
+                  </div>
+                  <div class="archiving-content pt-5">
+                    <div class="container">
+                      <div
+                        class="row justify-content-center align-items-center"
+                      >
+                        <div class="col-lg-6">
+                          <a
+                            href="https://github.com/dhwngjs01"
+                            title="https://github.com/dhwngjs01"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <div
+                              class="card p-4 rounded-4 shadow cursor-pointer"
+                            >
+                              <div class="card-title mb-4">
+                                <img
+                                  src="resources/images/icons/version-control/github.png"
+                                  alt="Github 아이콘"
+                                  title="Github"
+                                  class="img-fluid px-5"
+                                />
+                              </div>
+                              <div class="card-body">
+                                <p class="link-primary">github.com/dhwngjs01</p>
+                                <p>
+                                  <span class="fw-bold">소스 코드 저장소</span
+                                  >입니다.
+                                </p>
+                                <ul class="lh-lg">
+                                  <li>과거 프로젝트의 소스 코드</li>
+                                  <li>코딩 연습을 위해 만들어본 소스 코드</li>
+                                  <li>학교 강의에서 배운 소스 코드</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /Archiving -->
+          <!-- Projects -->
+          <div class="swiper-slide projects-slide">
+            <section id="projects">
+              <div class="projects py-5">
+                <div class="container">
+                  <div class="projects-title">
+                    <h2 class="text-center text-white">
+                      <i
+                        class="fa-solid fa-link"
+                        onclick="handleSlideMove(4)"
+                      ></i>
+                      <span>PROJECTS</span>
+                    </h2>
+                  </div>
+                  <div class="projects-content">
+                    <div class="row gy-4">
+                      <div class="col-lg-12">
+                        <div class="card p-4 rounded-4">
+                          <div class="card-title text-center">
+                            <h2 class="fs-2">Electrip</h2>
+                            <p class="fs-6">2023. 03 (개인 프로젝트)</p>
+                          </div>
+                          <div class="card-body"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="card p-4 rounded-4">
+                          <div class="card-title text-center">
+                            <h2 class="fs-2">Oh! Bike 쇼핑몰</h2>
+                            <p class="fs-6">2019. 11 (개인 프로젝트)</p>
+                          </div>
+                          <div class="card-body"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="card p-4 rounded-4">
+                          <div class="card-title text-center">
+                            <h2 class="fs-2">바이크 중고거래 게시판</h2>
+                            <p class="fs-6">2019.09 (개인 프로젝트)</p>
+                          </div>
+                          <div class="card-body"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /Projects -->
+          <!-- Career -->
+          <div class="swiper-slide">
+            <section id="career">
+              <div class="career py-5">
+                <div class="container">
+                  <div class="career-title">
+                    <h2 class="text-center">
+                      <i
+                        class="fa-solid fa-link"
+                        onclick="handleSlideMove(5)"
+                      ></i>
+                      <span>CAREER</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- /Career -->
+        </div>
+      </div>
+    </div>
+
+    <script src="resources/lib/jquery/jquery-3.6.4.min.js"></script>
+    <script src="resources/lib/bootstrap/bootstrap.js"></script>
+    <script src="resources/lib/wow/wow.min.js"></script>
+    <script src="resources/lib/font-awesome/font-awesome.min.js"></script>
+    <script src="resources/lib/swiper/swiper-bundle.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
+</html>
