@@ -1,39 +1,48 @@
 #main-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 4rem;
+
+  width: 100%;
+  min-height: 100vh;
+
   .main-visual-background {
     position: absolute;
     left: 0;
     top: 0;
+
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center center;
 
     z-index: -1;
   }
 
   .main-visual-content {
+    width: 100%;
     font-family: "Noto Sans KR", sans-serif;
     color: #fff;
     text-align: center;
-  }
 
-  .main-visual-border {
-    width: 3rem;
-    height: 0.1rem;
-    background-color: #fff;
-    margin: 2rem auto;
-  }
-
-  .main-visual-description {
-    p {
-      font-weight: 300;
-      font-size: 1.1rem;
+    .main-visual-title::after {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 0.1rem;
+      background-color: #fff;
+      margin: 2rem auto;
     }
-  }
 
-  .main-visual-button {
-    margin-top: 7rem;
+    .main-visual-description {
+      p {
+        font-weight: 300;
+        font-size: 1.1rem;
+      }
+    }
   }
 }

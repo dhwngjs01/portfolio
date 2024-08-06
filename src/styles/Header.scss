@@ -11,7 +11,7 @@
   .nav-item {
     a.active,
     &:hover a {
-      color: #0087e2 !important;
+      color: var(--primary) !important;
     }
   }
 
@@ -33,7 +33,7 @@
       padding-bottom: 1rem;
 
       &:hover {
-        color: #0087e2 !important;
+        color: var(--primary) !important;
       }
     }
 

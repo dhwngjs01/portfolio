@@ -53,23 +53,7 @@ export default function AboutMe({ handleClickLinkIcon }) {
             {about_me.map((item, index) => {
               return (
                 <Col key={index} lg={4}>
-                  <div className="d-flex">
-                    <div className="about-me-icon">
-                      <FontAwesomeIcon icon={item.icon} />
-                    </div>
-                    <div className="about-me-text">
-                      <h5 className="fw-bold">{item.category}</h5>
-                      <span className="word-break-keep-all">
-                        {item.type ? (
-                          <a href={`${item.type}:${item.content}`} className={`text-decoration-none text-black ${item.type}`}>
-                            {item.content}
-                          </a>
-                        ) : (
-                          item.content
-                        )}
-                      </span>
-                    </div>
-                  </div>
+                  <AboutMeItem {...item} />
                 </Col>
               );
             })}
@@ -77,5 +61,27 @@ export default function AboutMe({ handleClickLinkIcon }) {
         </div>
       </Container>
     </section>
+  );
+}
+
+function AboutMeItem({ type, icon, category, content }) {
+  return (
+    <div className="d-flex column-gap-4">
+      <div className="about-me-icon d-flex align-items-center">
+        <FontAwesomeIcon icon={icon} />
+      </div>
+      <div className="about-me-text">
+        <h5 className="fw-bold">{category}</h5>
+        <span className="word-break-keep-all">
+          {type ? (
+            <a href={`${type}:${content}`} className={`text-decoration-none text-black ${type}`}>
+              {content}
+            </a>
+          ) : (
+            content
+          )}
+        </span>
+      </div>
+    </div>
   );
 }
