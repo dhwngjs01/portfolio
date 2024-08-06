@@ -54,12 +54,12 @@ export default function Skills({ handleClickLinkIcon }) {
         name: "PHP",
         icon: "/images/icons/back-end/php.png",
       },
-      {
-        size: { lg: 6 },
-        name: "JSP",
-        icon: "/images/icons/back-end/jsp.png",
-        className: "mw-75",
-      },
+      // {
+      //   size: { lg: 6 },
+      //   name: "JSP",
+      //   icon: "/images/icons/back-end/jsp.png",
+      //   className: "mw-75",
+      // },
       {
         size: { lg: 12 },
         name: "Node.js",
@@ -70,11 +70,11 @@ export default function Skills({ handleClickLinkIcon }) {
         name: "Express.js",
         icon: "/images/icons/back-end/expressjs.png",
       },
-      {
-        size: { lg: 12 },
-        name: "Spring",
-        icon: "/images/icons/back-end/spring.png",
-      },
+      // {
+      //   size: { lg: 12 },
+      //   name: "Spring",
+      //   icon: "/images/icons/back-end/spring.png",
+      // },
     ],
     database: [
       {
