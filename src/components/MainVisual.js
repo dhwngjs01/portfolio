@@ -8,7 +8,7 @@ import "../styles/MainVisual.scss";
 export default function MainVisual({ handleClickLinkIcon }) {
   return (
     <div id="main-visual">
-      <div className="main-visual-background" style={{ backgroundImage: "url(/images/main/main-visual.jpg)" }}></div>
+      <div className="main-visual-background" style={{ backgroundImage: "url(images/main/main-visual.jpg)" }}></div>
       <div className="main-visual-content">
         <div className="main-visual-title">
           <h1 className="fw-bold fs-0">오주헌</h1>

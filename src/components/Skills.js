@@ -10,112 +10,112 @@ export default function Skills({ handleClickLinkIcon }) {
       {
         size: { lg: 4 },
         name: "HTML5",
-        icon: "/images/icons/front-end/html5.png",
+        icon: "images/icons/front-end/html5.png",
       },
       {
         size: { lg: 4 },
         name: "CSS3",
-        icon: "/images/icons/front-end/css3.png",
+        icon: "images/icons/front-end/css3.png",
       },
       {
         size: { lg: 4 },
         name: "JavaScript",
-        icon: "/images/icons/front-end/javascript.png",
+        icon: "images/icons/front-end/javascript.png",
       },
       {
         size: { lg: 12 },
         name: "Bootstrap",
-        icon: "/images/icons/front-end/bootstrap.png",
+        icon: "images/icons/front-end/bootstrap.png",
       },
       {
         size: { lg: 12 },
         name: "jQuery",
-        icon: "/images/icons/front-end/jquery.png",
+        icon: "images/icons/front-end/jquery.png",
       },
       {
         size: { lg: 12 },
         name: "Pug",
-        icon: "/images/icons/front-end/pug.png",
+        icon: "images/icons/front-end/pug.png",
       },
       {
         size: { lg: 12 },
         name: "React",
-        icon: "/images/icons/front-end/react.png",
+        icon: "images/icons/front-end/react.png",
       },
       {
         size: { lg: 12 },
         name: "Next.js",
-        icon: "/images/icons/front-end/nextjs.png",
+        icon: "images/icons/front-end/nextjs.png",
       },
     ],
     backEnd: [
       {
         size: { lg: 6 },
         name: "PHP",
-        icon: "/images/icons/back-end/php.png",
+        icon: "images/icons/back-end/php.png",
       },
       // {
       //   size: { lg: 6 },
       //   name: "JSP",
-      //   icon: "/images/icons/back-end/jsp.png",
+      //   icon: "images/icons/back-end/jsp.png",
       //   className: "mw-75",
       // },
       {
         size: { lg: 12 },
         name: "Node.js",
-        icon: "/images/icons/back-end/nodejs.png",
+        icon: "images/icons/back-end/nodejs.png",
       },
       {
         size: { lg: 12 },
         name: "Express.js",
-        icon: "/images/icons/back-end/expressjs.png",
+        icon: "images/icons/back-end/expressjs.png",
       },
       // {
       //   size: { lg: 12 },
       //   name: "Spring",
-      //   icon: "/images/icons/back-end/spring.png",
+      //   icon: "images/icons/back-end/spring.png",
       // },
     ],
     database: [
       {
         size: { lg: 12 },
         name: "MySQL",
-        icon: "/images/icons/database/mysql.png",
+        icon: "images/icons/database/mysql.png",
       },
       {
         size: { lg: 12 },
         name: "MariaDB",
-        icon: "/images/icons/database/mariadb.png",
+        icon: "images/icons/database/mariadb.png",
       },
     ],
     versionControl: [
       {
         size: { lg: 12 },
         name: "Git",
-        icon: "/images/icons/version-control/git.png",
+        icon: "images/icons/version-control/git.png",
         className: "mw-75",
       },
       {
         size: { lg: 12 },
         name: "GitHub",
-        icon: "/images/icons/version-control/github.png",
+        icon: "images/icons/version-control/github.png",
       },
     ],
     etc: [
       {
         size: { lg: 12 },
         name: "Apache",
-        icon: "/images/icons/etc/apache.png",
+        icon: "images/icons/etc/apache.png",
       },
       {
         size: { lg: 12 },
         name: "Amazon Web Services",
-        icon: "/images/icons/etc/aws.png",
+        icon: "images/icons/etc/aws.png",
       },
       {
         size: { lg: 12 },
         name: "Visual Studio Code",
-        icon: "/images/icons/etc/vscode.png",
+        icon: "images/icons/etc/vscode.png",
       },
     ],
   };
