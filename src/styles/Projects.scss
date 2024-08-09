@@ -1,13 +1,13 @@
 #projects {
   background-color: var(--projects);
-}
 
-.swiper-container {
-  width: 400px;
-}
+  .swiper-container {
+    width: 400px;
 
-.swiper {
-  .swiper-wrapper {
-    align-items: center;
+    .swiper {
+      .swiper-wrapper {
+        align-items: center;
+      }
+    }
   }
 }

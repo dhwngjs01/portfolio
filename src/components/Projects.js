@@ -182,7 +182,7 @@ function ProjectCard(param) {
           <div className="swiper-container">
             <SlideAnimation swiperClassName={swiperClassName} swiperImageFolder={swiperImageFolder} swiperImageLength={swiperImageLength} />
           </div>
-          <Card.Text>{projectInfo}</Card.Text>
+          <div className="card-text">{projectInfo}</div>
         </div>
       </Card.Body>
     </Card>
