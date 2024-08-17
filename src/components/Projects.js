@@ -189,7 +189,9 @@ function ProjectCard(param) {
   );
 }
 
-function SlideAnimation({ swiperClassName, swiperImageFolder, swiperImageLength }) {
+function SlideAnimation(param) {
+  const { swiperClassName, swiperImageFolder, swiperImageLength } = param;
+
   return (
     <Swiper className={swiperClassName}>
       {[...Array(swiperImageLength)].map((_, index) => (

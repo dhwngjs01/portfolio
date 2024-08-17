@@ -1,0 +1,46 @@
+#career {
+  position: relative;
+
+  .career-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top top;
+
+    isolation: isolate;
+    z-index: -1;
+  }
+
+  .career-background::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    inset: 0;
+    opacity: 0.5;
+  }
+
+  .career-content {
+    .career-item {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+      margin-bottom: 30px;
+
+      & > div:first-child {
+        border-right: 1px solid #e0e0e0;
+
+        .career-logo {
+          border: 1px solid #e0e0e0;
+        }
+      }
+    }
+  }
+}
